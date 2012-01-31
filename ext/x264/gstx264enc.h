@@ -121,6 +121,7 @@ struct _GstX264Enc
   const x264_level_t *peer_level;
 
   GstClockTime pending_key_unit_ts;
+  GstEvent *pending_key_unit_event;
   GstEvent *force_key_unit_event;
 };
 
